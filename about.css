@@ -7,14 +7,14 @@ li {
     justify-content: right;
     padding-top: 20px;
     padding-right: 20px;
-    color:aliceblue;
+    color: aliceblue;
 }
 
 .navbar a {
     justify-content: space-between;
     padding: 20px;
     text-decoration: none;
-    color:whitesmoke;
+    color: whitesmoke;
 }
 
 
@@ -33,10 +33,20 @@ h1 {
     color: whitesmoke;
     padding-left: 5px;
     text-decoration-line: underline;
-    text-decoration-color:rgb(251, 213, 98);
+    text-decoration-color: rgb(251, 213, 98);
     text-decoration-thickness: 3px;
     border-left: solid;
-    
+
     border-color: rgb(251, 213, 98);
     bottom: 50%;
+}
+
+h2 {
+    color: whitesmoke;
+
+}
+
+.introduction {
+    font-size: 40px;
+    position: relative;
 }

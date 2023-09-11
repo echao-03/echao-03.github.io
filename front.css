@@ -8,31 +8,41 @@ body {
     border: 5px solid white;
 }
 
-.header {
+.greeting {
     padding-top: 40px;
     position: relative;
     padding-left: 60px;
-    padding-right: 60px;
-    
+
 }
 
 
 
-.header h1 {
+.greeting h1 {
     position: relative;
     font-size: 60px;
     color: aliceblue;
     padding-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+
     text-decoration-line: underline;
-    text-decoration-color:rgb(251, 213, 98);
+    text-decoration-color: rgb(251, 213, 98);
     text-decoration-thickness: 3px;
     border-left: solid;
-    
+
     border-color: rgb(251, 213, 98);
     bottom: 50%;
 }
 
-.header h2 {
+.title {
+    padding-top: 40px;
+    position: relative;
+    padding-left: 60px;
+}
+
+.title h1 {}
+
+.greeting h2 {
     color: aliceblue;
 }
 
@@ -41,14 +51,14 @@ body {
     justify-content: right;
     padding-top: 20px;
     padding-right: 20px;
-    color:aliceblue;
+    color: aliceblue;
 }
 
 .navbar a {
     justify-content: space-between;
     padding: 20px;
     text-decoration: none;
-    color:whitesmoke;
+    color: whitesmoke;
 }
 
 

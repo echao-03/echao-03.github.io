@@ -4,14 +4,17 @@ li {
     list-style: none;
 }
 
-body {
-    border: 5px solid white;
-}
+
 
 .greeting {
-    padding-top: 40px;
+    margin-top: 50px;
     position: relative;
-    padding-left: 60px;
+    display: flex;
+    justify-content: center;
+    /* Horizontal centering */
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 20px;
 
 }
 
@@ -35,7 +38,7 @@ body {
 }
 
 .title {
-    padding-top: 40px;
+
     position: relative;
     padding-left: 60px;
 }
@@ -74,14 +77,22 @@ body {
 }
 
 .row {
+    position: relative;
+    justify-content: center;
+    /* Horizontal centering */
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
 }
 
 .about {
-    position: relative;
+    position: absolute;
+    text-align: center;
     padding-left: 60px;
     padding-right: 60px;
     color: whitesmoke;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin-top: 200px;
 
 }

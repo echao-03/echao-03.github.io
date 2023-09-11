@@ -40,7 +40,9 @@ body {
     padding-left: 60px;
 }
 
-.title h1 {}
+.title h1 {
+    padding-right: 100px;
+}
 
 .greeting h2 {
     color: aliceblue;

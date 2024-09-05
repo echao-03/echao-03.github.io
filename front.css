@@ -1,98 +1,101 @@
-/*Be sure to add semicolon per line!*/
-
-li {
-    list-style: none;
-}
-
-
-
-.greeting {
-    margin-top: 50px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    /* Horizontal centering */
-    align-items: center;
-    border: 5px solid white;
-    border-radius: 20px;
-
-}
-
-
-
-.greeting h1 {
-    position: relative;
-    font-size: 60px;
-    color: aliceblue;
-    padding-left: 5px;
-    display: flex;
-    flex-wrap: wrap;
-
-    text-decoration-line: underline;
-    text-decoration-color: rgb(251, 213, 98);
-    text-decoration-thickness: 3px;
-    border-left: solid;
-
-    border-color: rgb(251, 213, 98);
-    bottom: 50%;
-}
-
-.title {
-
-    position: relative;
-    padding-left: 60px;
-}
-
-.title h1 {
-    padding-right: 100px;
-}
-
-.greeting h2 {
-    color: aliceblue;
-}
-
-.navbar {
-    display: flex;
-    justify-content: right;
-    padding-top: 20px;
-    padding-right: 20px;
-    color: aliceblue;
-}
-
-.navbar a {
-    justify-content: space-between;
-    padding: 20px;
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-
-.navbar a:hover {
-    text-decoration: none;
-    color: rgb(235, 215, 107)
-}
-
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.row {
-    position: relative;
-    justify-content: center;
-    /* Horizontal centering */
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.about {
-    position: absolute;
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
-    padding-left: 60px;
-    padding-right: 60px;
-    color: whitesmoke;
-    border: 5px solid white;
-    border-radius: 20px;
-    margin-top: 200px;
+}
 
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Section Styles */
+section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#home .intro {
+    margin-top: 1rem;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#about,
+#projects,
+#skills,
+#contact {
+    background-color: #fff;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Projects Section */
+.project {
+    margin: 1.5rem 0;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+}
+
+#skills ul li {
+    padding: 0.5rem;
+    font-size: 1.1rem;
 }

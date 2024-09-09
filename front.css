@@ -5,18 +5,43 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
+    padding-top: 70px;
 }
 
 /* Header Styles */
 header {
-    background: #333;
+    position: fixed;
+    /* Fixes the navbar to the top */
+    top: 0;
+    /* Keeps it at the very top */
+    width: 100%;
+    /* Make sure it stretches across the screen */
+    background-color: #333;
+    /* Background color of the navbar */
+    z-index: 1000;
+    /* Ensures the navbar stays above other content */
+}
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    /* Align the initial to the left and links to the right */
+    align-items: center;
+    padding: 0 2rem;
+    /* Add padding to the sides */
+    width: 100%;
+}
+
+/* Initial (Logo) Styling */
+.logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
     color: #fff;
-    padding: 1rem 0;
-    text-align: center;
 }
 
 header h1 {
@@ -26,7 +51,9 @@ header h1 {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    margin: 0;
+    padding: 1rem 0;
 }
 
 nav ul li {
@@ -40,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6347;
+    color: #74d494;
 }
 
 /* Section Styles */
@@ -49,29 +76,102 @@ section {
     text-align: center;
 }
 
+#home {
+    background-color: #e9f2ed;
+    color: #144128;
+
+}
+
 #home .intro {
     margin-top: 1rem;
 }
 
-#home h2 {
-    font-size: 2.5rem;
-    color: #333;
+#home h1 {
+    font-size: 80px;
+    color: #144128;
+}
+
+#home p {
+    font-size: 25px;
+}
+
+
+.home-container {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Makes it responsive */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.intro {
+    flex: 1;
+    padding: 1rem;
+}
+
+.profile-pic {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+.profile-pic img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 30%;
+    /* Makes the image circular, if you want */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional for styling */
+}
+
+section {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #e9f2ed;
+    margin: 2rem auto;
+    /* Center the section horizontally */
+    padding: 2rem;
+    width: 80%;
+    /* Shrinks the section width (adjust as needed) */
+    border-radius: 15px;
+    /* Curved borders */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for style */
 }
 
 #about,
 #projects,
 #skills,
 #contact {
-    background-color: #fff;
-    margin: 2rem 0;
-    padding: 2rem 0;
+    width: 80%;
+    /* Shrink these sections to 80% of the viewport width */
+    margin: 2rem auto;
+    /* Center them */
+    padding: 2rem;
+    border-radius: 15px;
 }
 
-h2 {
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-    color: #333;
+
+
+
+#about {
+    color: #144128;
+    padding-bottom: 4rem;
+    font-size: 20px;
 }
+
+#about h2 {
+    font-size: 60px;
+}
+
+#about p {
+    text-align: left;
+    line-height: normal;
+}
+
+
 
 /* Projects Section */
 .project {
@@ -89,13 +189,67 @@ h2 {
 }
 
 /* Skills Section */
-#skills ul {
-    list-style: none;
-    display: inline-block;
-    text-align: left;
+#skills {
+
+    text-align: center;
+    background-color: #e9f2ed;
+    margin: 2rem auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#skills ul li {
-    padding: 0.5rem;
+.skill-title {
+    padding-bottom: 20px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    /* Space between the two skill categories */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* Makes the layout responsive for smaller screens */
+    gap: 2rem;
+    /* Adds space between the columns */
+}
+
+/* Skill Category Styling */
+.skill-category {
+    flex: 1;
+    padding: 1rem;
+    background-color: #bcdfcc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional for style */
+}
+
+.skill-category h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    padding: 0.5rem 0;
     font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        /* Stacks the sections vertically on small screens */
+    }
+}
+
+.foot {
+    text-align: center;
 }

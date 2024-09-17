@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
     line-height: 1.6;
@@ -31,10 +35,15 @@ header {
     display: flex;
     justify-content: space-between;
     /* Align the initial to the left and links to the right */
-    align-items: center;
+
     padding: 0 2rem;
     /* Add padding to the sides */
     width: 100%;
+}
+
+.logo {
+    padding-top: 6px;
+
 }
 
 /* Initial (Logo) Styling */
@@ -69,6 +78,60 @@ nav ul li a {
 nav ul li a:hover {
     color: #74d494;
 }
+
+.side-navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* Keeps it in place while scrolling */
+    top: 50%;
+    /* Aligns it vertically in the middle */
+    left: 0;
+    /* Positions it on the left side of the screen */
+    transform: translateY(-50%);
+    /* Centers it vertically */
+    background-color: #333;
+    /* Navbar background color */
+    padding: 1rem;
+    z-index: 1000;
+    /* Ensures it's above other elements */
+    border-radius: 0 10px 10px 0;
+    /* Curved corners on the right */
+    padding-bottom: 7px;
+
+}
+
+.side-navbar ul {
+    list-style: none;
+
+
+}
+
+
+
+.side-navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+
+}
+
+.imageBox-linkedin img:hover {
+    content: url('linkedin_green.png');
+    transform: scale(1.1);
+}
+
+.imageBox-github img:hover {
+    content: url('github_green.png');
+    transform: scale(1.1);
+}
+
+.imageBox-linkedin {
+    padding-bottom: 10px;
+}
+
 
 /* Section Styles */
 section {
@@ -172,14 +235,80 @@ section {
 }
 
 
+/* Skills Section */
+#skills {
+
+    text-align: center;
+    background-color: #e9f2ed;
+    margin: 2rem auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #144128;
+}
+
+.skill-title {
+    padding-bottom: 20px;
+}
+
+.skill-title h2 {
+    font-size: 60px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    /* Space between the two skill categories */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* Makes the layout responsive for smaller screens */
+    gap: 2rem;
+    /* Adds space between the columns */
+}
+
+/* Skill Category Styling */
+.skill-category {
+    flex: 1;
+    padding: 1rem;
+    background-color: #bcdfcc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional for style */
+}
+
+.skill-category h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
 
 /* Projects Section */
+#projects {
+    color: #144128;
+}
+
 .project {
     margin: 1.5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+#projects h2 {
+    font-size: 60px;
 }
 
 .project-text {
@@ -225,6 +354,12 @@ section {
 
 .languages {
     padding-top: 20px;
+
+}
+
+.languages img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project img {
@@ -232,59 +367,28 @@ section {
     height: 50px;
 }
 
-
-/* Skills Section */
-#skills {
-
+#resume {
+    color: #144128;
+    align-content: center;
+    justify-content: center;
     text-align: center;
-    background-color: #e9f2ed;
-    margin: 2rem auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    width: 80%;
+}
+
+#resume h2 {
+    font-size: 60px;
+}
+
+.resume-container {
+    padding: 20px;
+}
+
+.resume-container a {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.skill-title {
-    padding-bottom: 20px;
-}
-
-/* Skills Container */
-.skills-container {
-    display: flex;
-    justify-content: space-between;
-    /* Space between the two skill categories */
-    align-items: flex-start;
-    flex-wrap: wrap;
-    /* Makes the layout responsive for smaller screens */
-    gap: 2rem;
-    /* Adds space between the columns */
-}
-
-/* Skill Category Styling */
-.skill-category {
-    flex: 1;
-    padding: 1rem;
     background-color: #bcdfcc;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Optional for style */
-}
 
-.skill-category h3 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
 
-.skill-category ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skill-category ul li {
-    padding: 0.5rem 0;
-    font-size: 1.1rem;
+    padding: 20px;
 }
 
 /* Responsive Design */

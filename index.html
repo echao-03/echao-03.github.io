@@ -1,267 +1,324 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio website" />
     <title>Erik Chao</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Helvetica+Neue:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="content-wrapper">
+        <header class="site-header">
+          <span class="logo-name">Erik Chao</span>
+          <span class="logo-tag">SWE · Graphics · HCI</span>
+        </header>
 
-<body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <div class="navbar-container">
-                <div class="logo">
-                    <span>EC.</span>
-                </div>
-                <ul>
-                    <li><a href="#about1">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experiences">Experiences</a></li>
-                    <li><a href="Resume_2026.pdf">Resume</a></li>
-
-                </ul>
+        <section class="hero-section">
+          <div class="hero-content">
+            <div class="status-indicator">
+              <span class="status-dot"></span>
+              Open to internships · new-grad 2027
             </div>
-        </nav>
-
-    </header>
-
-    <div class="container">
-        <div class="main-container">
-            <div class="left-container">
-                <div class="left-content">
-                    <h1>Hi! My name is Erik Chao. </h1>
-                    <h2>Graduate Student @ UC Santa Cruz</h2>
-                </div>
-                <div class="left-picture">
-                    <img src="profile_pic_2.jpg" alt="profile picture">
-                </div>
-                <div class="social-container">
-
-                </div>
-
+            <h1 class="hero-title">
+              Software engineer<br />building graphics<br />&amp;
+              <span class="highlight">human interfaces</span>.
+            </h1>
+            <p class="hero-subtitle">
+              Erik Chao — blending usability and design into thoughtful,
+              user-centered software at the seam of computer graphics, XR, and
+              HCI. MS Computer Science @ UC Santa Cruz.
+            </p>
+            <div class="hero-links">
+              <a href="Resume_2026.pdf" target="_blank" class="btn-primary"
+                >View resume →</a
+              >
+              <a href="oldIndex.html" class="btn-secondary">View old website</a>
             </div>
-            <div id="about1"></div>
-            <div class="right-container">
-                <div id="about">
+          </div>
+          <div class="hero-visual">
+            <img
+              src="profile_pic_2.jpg"
+              alt="Erik Chao Profile Picture"
+              class="profile-pic"
+            />
+          </div>
+        </section>
 
-                </div>
-                <p>I’m a developer passionate about creating programs that are simple and accessible to use. My work
-                    focuses on blending usability and design to build thoughtful, user-centered experiences.
-                    <br>
-                    <br>
-                    My interests align with computer graphics, extended reality, and human-computer
-                    interaction—fields
-                    that lets me combine creativity with problem-solving.
-                    <br>
-                    <br>
-                    I’m currently pursuing a master's degree in Computer Science at the University of California,
-                    Santa
-                    Cruz.
-                    <br>
-                    <br>
-                    When I’m not at my computer, you can find me playing the guitar, baking banana bread, or going
-                    on
-                    long walks.
-                    <br>
-                    <br>
+        <section class="grid-section" id="about">
+          <div class="section-label"><span>01 — About</span></div>
+          <div class="section-content">
+            <p class="about-text">
+              I build programs that are simple and accessible. My work lives
+              where creativity and problem-solving overlap — computer graphics,
+              extended reality, and human-computer interaction.
+            </p>
+            <p class="about-subtext">
+              Off the clock: guitar, banana bread, and long walks.
+            </p>
+          </div>
+        </section>
+
+        <section class="grid-section" id="skills">
+          <div class="section-label"><span>02 — Skills</span></div>
+          <div class="section-content skills-list">
+            <div class="skill-group">
+              <div class="skill-group-name">Programming Languages</div>
+              <div class="skill-tags">
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>SQL</span>
+                <span>C++</span>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <div class="skill-group-name">Libraries & Frameworks</div>
+              <div class="skill-tags">
+                <span>React</span>
+                <span>Next.js</span>
+                <span>Three.js</span>
+                <span>Express.js</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <div class="skill-group-name">Tools & Platforms</div>
+              <div class="skill-tags">
+                <span>Git</span>
+                <span>Vercel</span>
+                <span>Mailchimp</span>
+                <span>Adobe Lightroom</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="work-section" id="projects">
+          <div class="work-header">
+            <span class="section-label-inline">03 — Selected work</span>
+          </div>
+          <div class="projects-list">
+            <a
+              href="https://github.com/echao-03/AsymmetricExp"
+              target="_blank"
+              class="project-card"
+            >
+              <div class="project-num">01</div>
+              <div class="project-info">
+                <h3 class="project-title">Capstone Project: AsymmetricExp</h3>
+                <div class="project-meta">UC Santa Cruz · 2026</div>
+                <div class="project-metric">Capstone / WebXR</div>
+                <p class="project-desc">
+                  A web-based, asymmetric multiplayer experience that pairs a
+                  fully immersed VR user with a traditional desktop PC player
+                  within a single, shared environment. Built entirely on open
+                  web standards using Three.js, WebXR, and WebSockets, the game
+                  transforms hardware differences into a collaborative mechanic.
                 </p>
-                <div id="skills">
-                <h2>Skills</h2>
-                    <div class="skills-container">
-                        <div class="grid-item">
-                            <h3>Programming Languages</h3>
-                        </div>
-                        <div class="grid-item">
-                            <p>JavaScript, Python, SQL, C++, HTML, CSS</p>
-                        </div>
-                        <div class="grid-item">
-                            <h3>Libraries & Frameworks</h3>
-                        </div>
-                        <div class="grid-item">
-                            <p>React, Next.js, Three.js, Express.js</p>
-                        </div>
-                        <div class="grid-item">
-                            <h3>Tools & Platforms</h3>
-                        </div>
-                        <div class="grid-item">
-                            <p>Git, Vercel, Mailchimp, Adobe Lightroom</p>
-                        </div>
-                    </div>
+                <div class="project-tags">
+                  <span>Three.js</span>
+                  <span>Node.js</span>
+                  <span>Express.js</span>
                 </div>
+              </div>
+              <div class="project-visual">
+                <div
+                  class="visual-placeholder"
+                  style="
+                    background-image: url(&quot;capstone4.PNG&quot;);
+                    background-size: cover;
+                    background-position: center;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                  "
+                ></div>
+              </div>
+            </a>
 
-                <div class="project-container">
-                    <div id="projects">
-                        <h2>Projects</h2>
-                    </div>
-
-                    <ul class="project-list">
-                        <li class="projectli-1">
-                            <ul class="projectdiv-1">
-                                <img src="taxonomy2.PNG" alt="project 2 picture">
-                                <div class="projectdiv-1Content">
-                                    <h3><a href="https://set-lab-ucsc.github.io/taxonomy/">Spatial Interaction Vault</a></h3>
-                                    <p>Developed in the Social Emotional Technology (SET) lab at UC Santa Cruz under Dr.
-                                        Katherine Isbister and PhD student Samir Ghosh. Inspired by the <a href="https://locomotionvault.github.io/"><em>Locomotion Vault</em></a> by Luca et al., 
-                                        The Spatial Interaction Vault is a collection of 
-                                        interaction techniques that users can perform in VR. We've observed over 250 observations of interactions across 30 applications. As a result, 
-                                        many existing applications share similar techniques to interact with their interfaces.  <br><br>
-
-
-                                        My contributions to the project includes:
-                                    <ul>
-                                        <li>Observing and recording interaction techniques across multiple applications</li>
-                                        <li>Created visual analyses across applications and observations that highlighted
-                                            commonalities between interactions.</li>
-                                    </ul>
-                                    </p>
-                                    <ul class="projectdiv-ulLanguages">
-                                        <li class="projectli-Languages">
-                                            <p>JavaScript</p>
-                                        </li>
-                                        <li class="projectli-Languages">
-                                            <p>Node.js</p>
-                                        </li>
-
-                                        <li class="projectli-Languages">
-                                            <p>HTML</p>
-                                        </li>
-                                    </ul>
-
-                                </div>
-
-                            </ul>
-                            <ul class="projectdiv-1">
-                                <img src="seal.PNG" alt="project 2 picture">
-                                <div class="projectdiv-1Content">
-                                    <h3><a href="https://smrghsh.github.io/seals/">"Diving with Seals in VR": A
-                                            Research-through-Design Project with Marine Scientists Towards Collaborative
-                                            Scientific Sensemaking"</a></h3>
-                                    <p>Developed in the Social Emotional Technology (SET) lab at UC Santa Cruz under Dr.
-                                        Katherine Isbister and PhD student Samir Ghosh. The Seals project is a VR
-                                        experience in Three.js that allows multiple users to interact with elephant seal
-                                        paths
-                                        around Monterey, CA. Through the interaction, you can view the current depth,
-                                        heart rate, and their current sleep cycle stage the seals were in. <br><br>
-
-
-                                        My contributions to the project includes:
-                                    <ul>
-                                        <li>Improving path rendering speedup by 80% when loading onto the website.</li>
-                                        <li>Developed a sliding interface to for seamless playback of recorded
-                                            data.</li>
-                                    </ul>
-                                    </p>
-                                    <ul class="projectdiv-ulLanguages">
-                                        <li class="projectli-Languages">
-                                            <p>Three.js</p>
-                                        </li>
-                                        <li class="projectli-Languages">
-                                            <p>JavaScript</p>
-                                        </li>
-
-                                        <li class="projectli-Languages">
-                                            <p>Python</p>
-                                        </li>
-                                    </ul>
-
-                                </div>
-
-                            </ul>
-                            <ul class="projectdiv-1">
-                                <img src="qr_scanner_picture.PNG" alt="project 1 picture">
-                                <div class="projectdiv-1Content">
-                                    <h3><a href="https://github.com/echao-03/qr-scannerV2">QR Validator</a></h3>
-                                    <p>A web app that validates data stored in a Google Sheet.
-                                        It reads the unique ID embedded in each QR code and cross-
-                                        references it with entries in the spreadsheet. Can be used as a real-time
-                                        validation.
-                                    </p>
-                                    <ul class="projectdiv-ulLanguages">
-                                        <li class="projectli-Languages">
-                                            <p>React</p>
-                                        </li>
-                                        <li class="projectli-Languages">
-                                            <p>Google</p>
-                                        </li>
-
-                                        <li class="projectli-Languages">
-                                            <p>Vercel</p>
-                                        </li>
-                                    </ul>
-
-                                </div>
-
-                            </ul>
-
-                        </li>
-                    </ul>
-
+            <a
+              href="https://set-lab-ucsc.github.io/taxonomy/"
+              target="_blank"
+              class="project-card"
+            >
+              <div class="project-num">02</div>
+              <div class="project-info">
+                <h3 class="project-title">Spatial Interaction Vault</h3>
+                <div class="project-meta">SET Lab @ UC Santa Cruz · 2025</div>
+                <div class="project-metric">Research / Gallery</div>
+                <p class="project-desc">
+                  A collection of interaction techniques that users can perform
+                  in VR. We've observed over 250 observations of interactions
+                  across 30 applications. Created visual analyses across
+                  applications and observations.
+                </p>
+                <div class="project-tags">
+                  <span>JavaScript</span>
+                  <span>Node.js</span>
+                  <span>HTML</span>
                 </div>
-                
-                <div id="experiences"></div>
-                <div class="experiences-container">
-                    <h2>Experiences</h2>
-                    <ul class="experiences-list">
-                        <li class="experiencesli-1">
-                            <div class="experiencesdiv-Date">
-                                <p>Sept 2024 - Dec 2024</p>
-                            </div>
-                            <div class="experiencesdiv-Content">
-                                <h3>Artificial Intelligence Tutor -<br> Baskin Engineering</h3>
-                                <p>Assisted students in learning key AI
-                                    concepts using UC Berkeley's Pac-Man AI
-                                    Project. Hosted online office hours to provide students with support outside
-                                    of class. Provided debugging support for students.
-                                </p>
-                                <ul class="experiences-ulLanguages">
-                                    <li class="experiencesli-Languages">
-                                        <p>Python</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+              </div>
+              <div class="project-visual">
+                <div
+                  class="visual-placeholder"
+                  style="
+                    background-image: url(&quot;taxonomy2.PNG&quot;);
+                    background-size: cover;
+                    background-position: center;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                  "
+                ></div>
+              </div>
+            </a>
 
-                        <li class="experiencesli-1">
-                            <div class="experiencesdiv-Date">
-                                <p>Sept 2024 - Dec 2024</p>
-                            </div>
-                            <div class="experiencesdiv-Content">
-                                <h3>Outreach Coordinator -<br> Korean American Student <br>Association</h3>
-                                <p>Reinstated a weekly newsletter system
-                                    for members to be updated with the
-                                    latest news. Established partnerships
-                                    with catering vendors to expand
-                                    fundraiser options. Worked with a team
-                                    to organize and lead general meetings,
-                                    while engaging with general members.
-                                </p>
-                                <ul class="experiences-ulLanguages">
-                                    <li class="experiencesli-Languages">
-                                        <p>Mailchimp</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-
-
-                    </ul>
+            <a
+              href="https://smrghsh.github.io/seals/"
+              target="_blank"
+              class="project-card"
+            >
+              <div class="project-num">03</div>
+              <div class="project-info">
+                <h3 class="project-title">Diving with Seals in VR</h3>
+                <div class="project-meta">SET Lab @ UC Santa Cruz · 2024</div>
+                <div class="project-metric">WebXR / Three.js</div>
+                <p class="project-desc">
+                  A VR experience in Three.js that allows multiple users to
+                  interact with elephant seal paths around Monterey, CA.
+                  Improved path rendering speedup by 80% when loading onto the
+                  website. Developed a sliding interface for seamless playback.
+                </p>
+                <div class="project-tags">
+                  <span>Three.js</span>
+                  <span>JavaScript</span>
+                  <span>Python</span>
                 </div>
+              </div>
+              <div class="project-visual">
+                <div
+                  class="visual-placeholder"
+                  style="
+                    background-image: url(&quot;seal.PNG&quot;);
+                    background-size: cover;
+                    background-position: center;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                  "
+                ></div>
+              </div>
+            </a>
 
+            <a
+              href="https://github.com/echao-03/qr-scannerV2"
+              target="_blank"
+              class="project-card"
+            >
+              <div class="project-num">04</div>
+              <div class="project-info">
+                <h3 class="project-title">QR Validator</h3>
+                <div class="project-meta">Personal Project · 2023</div>
+                <div class="project-metric">Full-stack / Tool</div>
+                <p class="project-desc">
+                  A web app that validates data stored in a Google Sheet. It
+                  reads the unique ID embedded in each QR code and
+                  cross-references it with entries in the spreadsheet. Used as a
+                  real-time validation tool.
+                </p>
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>Google API</span>
+                  <span>Vercel</span>
+                </div>
+              </div>
+              <div class="project-visual">
+                <div
+                  class="visual-placeholder"
+                  style="
+                    background-image: url(&quot;qr_scanner_picture.PNG&quot;);
+                    background-size: cover;
+                    background-position: center;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                  "
+                ></div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="grid-section" id="experiences">
+          <div class="section-label"><span>04 — Experience</span></div>
+          <div class="section-content experiences-list">
+            <div class="experience-item">
+              <div class="experience-date">Sept 2024 - Dec 2024</div>
+              <div class="experience-info">
+                <h3 class="experience-role">Artificial Intelligence Tutor</h3>
+                <div class="experience-org">
+                  Baskin Engineering, UC Santa Cruz
+                </div>
+                <p class="experience-desc">
+                  Assisted students in learning key AI concepts using UC
+                  Berkeley's Pac-Man AI Project. Hosted online office hours to
+                  provide students with support outside of class. Provided
+                  debugging support for students.
+                </p>
+              </div>
             </div>
 
+            <div class="experience-item">
+              <div class="experience-date">Sept 2024 - Dec 2024</div>
+              <div class="experience-info">
+                <h3 class="experience-role">Outreach Coordinator</h3>
+                <div class="experience-org">
+                  Korean American Student Association
+                </div>
+                <p class="experience-desc">
+                  Reinstated a weekly newsletter system for members to be
+                  updated with the latest news. Established partnerships with
+                  catering vendors to expand fundraiser options. Worked with a
+                  team to organize and lead general meetings.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-
-        </div>
-
+        <section class="footer-section">
+          <h2 class="footer-title">Check out my social!</h2>
+          <div class="contact-links">
+            <a
+              href="https://github.com/echao-03"
+              target="_blank"
+              class="contact-link"
+            >
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">echao-03</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/erik-chao/"
+              target="_blank"
+              class="contact-link"
+            >
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">erik-chao</span>
+            </a>
+          </div>
+          <div class="footer-copyright">© 2026 Erik Chao</div>
+        </section>
+      </div>
     </div>
-
-
+  </body>
 </html>

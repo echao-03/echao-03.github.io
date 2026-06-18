@@ -1,0 +1,374 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "JetBrains Mono";
+  line-height: 1.6;
+  background-color: #f7f7ff;
+  color: #333;
+  padding-top: 70px;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  /* Fixes the navbar to the top */
+  top: 0;
+  /* Keeps it at the very top */
+  width: 100%;
+  /* Make sure it stretches across the screen */
+  background-color: #bdd5ea;
+
+  /* Background color of the navbar */
+  z-index: 1000;
+
+  /* Ensures the navbar stays above other content */
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  /* Align the initial to the left and links to the right */
+  padding: 0 2rem;
+  /* Add padding to the sides */
+  width: 100%;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #000;
+}
+
+.logo {
+  padding-top: 6px;
+}
+
+/* Initial (Logo) Styling */
+.logo span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  max-width: 1280px;
+  /* screen-xl */
+  padding-left: 1.5rem;
+  /* 6 × 0.25rem */
+  padding-right: 1.5rem;
+  /* 12 × 0.25rem */
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    /* 4 × 0.25rem */
+  }
+}
+
+@media (min-width: 1024px) {
+  .left-container {
+    top: 0;
+    position: sticky;
+    display: flex;
+    max-height: 100vh;
+    width: 48%;
+    flex-direction: column;
+    padding-top: 5rem;
+    /* 24 × 0.25rem */
+    padding-bottom: 6rem;
+  }
+
+  .left-container h1 {
+    font-size: 55px;
+    color: #577399;
+  }
+
+  .left-container h2 {
+    font-size: 35px;
+  }
+}
+
+.left-picture img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  height: auto;
+  border-radius: 10%;
+  /* Makes the image circular, if you want */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1024px) {
+  .right-container {
+    padding-top: 6rem;
+  }
+
+  .right-container h2 {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .right-container {
+    width: 52%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.skill-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3mm;
+}
+
+.skill-left h3 {
+  margin-bottom: 2.8rem;
+}
+
+.skill-right {
+  text-align: right;
+}
+
+.project-1 {
+  display: flex;
+  gap: 20px;
+}
+
+.projectli-1 {
+  list-style: none;
+}
+
+.projectdiv-1 {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 3mm;
+}
+
+.projectdiv-1 img {
+  order: 1;
+  flex: 0 0 auto;
+  max-width: 30%;
+  height: auto;
+  border-radius: 20px;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projectdiv-1Content {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+}
+
+.projectdiv-1Content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.projectdiv-1Content a:hover {
+  text-decoration: underline;
+}
+
+.projectdiv-ulLanguages {
+  display: flex;
+  flex-direction: row;
+}
+
+.projectli-Languages {
+  list-style: none;
+  margin-top: 0.5rem;
+  margin-right: 0.375rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border: 0.5px solid black;
+  border-radius: 25px;
+  background-color: #bdd5ea;
+}
+
+.experiences-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.experiencesli-1 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.experiencesdiv-Date p {
+  font-size: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.experiencesdiv-Date {
+  margin-right: 75px;
+}
+
+.experiencesdiv-Content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.experiencesdiv-Content p {
+  font-size: 15px;
+}
+
+.experiences-ulLanguages {
+  display: flex;
+  flex-direction: row;
+}
+
+.experiencesli-Languages {
+  list-style: none;
+  margin-top: 0.5rem;
+  margin-right: 0.375rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border: 0.5px solid black;
+  border-radius: 25px;
+  background-color: #bdd5ea;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columns */
+  grid-template-rows: repeat(3, auto);
+  /* 3 rows */
+  gap: 1rem;
+  /* space between items */
+  max-width: 600px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .main-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .left-picture img {
+    max-width: 70%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  /* Reduce font sizes */
+  .left-container h1 {
+    font-size: 28px;
+  }
+
+  .left-container h2,
+  .right-container h2 {
+    font-size: 22px;
+  }
+
+  /* Stack nav items vertically */
+  nav ul {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    margin: 0.5rem;
+  }
+
+  .logo {
+    padding-top: 6px;
+  }
+
+  /* Make image full-width */
+  .left-picture img {
+    max-width: 80%;
+  }
+
+  /* Adjust project cards */
+  .projectdiv-1 {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .experiencesli-1 {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+
+  .projectdiv-1 img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
